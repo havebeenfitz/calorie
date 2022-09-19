@@ -1,0 +1,963 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D0D8B7028D354900099BC86 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D8B6F28D354900099BC86 /* DI.swift */; };
+		4D0D8B7328D379D10099BC86 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D8B7228D379D10099BC86 /* AsyncButton.swift */; };
+		4D0D8B8428D38CFA0099BC86 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4D0D8B8328D38CFA0099BC86 /* FirebaseAnalytics */; };
+		4D0D8B8628D38CFA0099BC86 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4D0D8B8528D38CFA0099BC86 /* FirebaseAuth */; };
+		4D0D8B8828D38CFA0099BC86 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4D0D8B8728D38CFA0099BC86 /* FirebaseFirestore */; };
+		4D0D8B8A28D38D170099BC86 /* gRPCCertificates-Cpp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4D0D8B8928D38D170099BC86 /* gRPCCertificates-Cpp.bundle */; };
+		4D2FD65628D4C0B8000499B2 /* AdminTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2FD65528D4C0B8000499B2 /* AdminTabView.swift */; };
+		4D2FD65A28D4C17B000499B2 /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2FD65928D4C17B000499B2 /* UsersListView.swift */; };
+		4D2FD65C28D4C200000499B2 /* UserClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2FD65B28D4C200000499B2 /* UserClient.swift */; };
+		4D2FD65E28D4C224000499B2 /* FirebaseUserClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2FD65D28D4C224000499B2 /* FirebaseUserClient.swift */; };
+		4D2FD66228D4C64C000499B2 /* ReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2FD66128D4C64C000499B2 /* ReportsView.swift */; };
+		4D2FD66528D4E833000499B2 /* EntriesSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2FD66428D4E833000499B2 /* EntriesSectionView.swift */; };
+		4D2FD66E28D516AF000499B2 /* EntriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2FD66D28D516AF000499B2 /* EntriesModel.swift */; };
+		4D2FD67328D51E7E000499B2 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2FD67228D51E7E000499B2 /* EntryView.swift */; };
+		4D2FD67728D521FA000499B2 /* AddEntryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2FD67628D521FA000499B2 /* AddEntryButtonView.swift */; };
+		4D2FD67D28D523A7000499B2 /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2FD67C28D523A7000499B2 /* FiltersView.swift */; };
+		4D3FF5B428D2005700AA70D2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FF5B328D2005600AA70D2 /* Constants.swift */; };
+		4D763D3428D1B9D000B6C8BA /* ApplicationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D763D3328D1B9D000B6C8BA /* ApplicationRepository.swift */; };
+		4D763D3728D1B9F800B6C8BA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D763D3628D1B9F800B6C8BA /* User.swift */; };
+		4D763D3928D1BA2200B6C8BA /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D763D3828D1BA2200B6C8BA /* Entry.swift */; };
+		4D763D4928D1BE3200B6C8BA /* DayProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D763D4828D1BE3200B6C8BA /* DayProgressView.swift */; };
+		4D763D4E28D1C06700B6C8BA /* FirebaseAuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D763D4D28D1C06700B6C8BA /* FirebaseAuthClient.swift */; };
+		4D763D5128D1C08F00B6C8BA /* FirebaseEntriesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D763D5028D1C08F00B6C8BA /* FirebaseEntriesClient.swift */; };
+		4D763D5728D1C6AF00B6C8BA /* EntriesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D763D5628D1C6AF00B6C8BA /* EntriesClient.swift */; };
+		4D763D5928D1C81600B6C8BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D763D5828D1C81600B6C8BA /* GoogleService-Info.plist */; };
+		4D7C310128D0CF4E0043E531 /* SimpleCalorieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C310028D0CF4E0043E531 /* SimpleCalorieApp.swift */; };
+		4D7C310528D0CF500043E531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C310428D0CF500043E531 /* Assets.xcassets */; };
+		4D7C310828D0CF500043E531 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C310728D0CF500043E531 /* Preview Assets.xcassets */; };
+		4D7C311328D0CF500043E531 /* SimpleCalorieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C311228D0CF500043E531 /* SimpleCalorieTests.swift */; };
+		4D7C311D28D0CF500043E531 /* SimpleCalorieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C311C28D0CF500043E531 /* SimpleCalorieUITests.swift */; };
+		4D7C311F28D0CF500043E531 /* SimpleCalorieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C311E28D0CF500043E531 /* SimpleCalorieUITestsLaunchTests.swift */; };
+		4D7C313928D0CFA40043E531 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C312D28D0CFA30043E531 /* SignInView.swift */; };
+		4D7C313A28D0CFA40043E531 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C312F28D0CFA30043E531 /* AppView.swift */; };
+		4D7C313E28D0CFA40043E531 /* EntriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C313428D0CFA40043E531 /* EntriesListView.swift */; };
+		4D7D491F28D3933D00A6D680 /* AuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7D491E28D3933D00A6D680 /* AuthClient.swift */; };
+		4D7D492228D3952600A6D680 /* DaySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7D492128D3952600A6D680 /* DaySection.swift */; };
+		4D7D492428D3964800A6D680 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7D492328D3964800A6D680 /* NetworkError.swift */; };
+		4D7D492628D3BB8F00A6D680 /* EntrySheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7D492528D3BB8F00A6D680 /* EntrySheetView.swift */; };
+		4D7D492828D3E24400A6D680 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7D492728D3E24400A6D680 /* ImagePicker.swift */; };
+		4D7D492A28D3EB6500A6D680 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4D7D492928D3EB6500A6D680 /* FirebaseStorage */; };
+		4DC2615628D5DC4100C0DA58 /* AdminModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC2615528D5DC4100C0DA58 /* AdminModel.swift */; };
+		4DC2615928D5F09A00C0DA58 /* UIUserAverageIntake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC2615828D5F09A00C0DA58 /* UIUserAverageIntake.swift */; };
+		4DC2615D28D61D6000C0DA58 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 4DC2615C28D61D6000C0DA58 /* Collections */; };
+		4DC2615F28D61D6000C0DA58 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 4DC2615E28D61D6000C0DA58 /* OrderedCollections */; };
+		4DC2616128D62DCA00C0DA58 /* UIEntriesCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC2616028D62DCA00C0DA58 /* UIEntriesCount.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D7C310F28D0CF500043E531 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D7C30F528D0CF4E0043E531 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D7C30FC28D0CF4E0043E531;
+			remoteInfo = SimpleCalorie;
+		};
+		4D7C311928D0CF500043E531 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D7C30F528D0CF4E0043E531 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D7C30FC28D0CF4E0043E531;
+			remoteInfo = SimpleCalorie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D0D8B6F28D354900099BC86 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
+		4D0D8B7228D379D10099BC86 /* AsyncButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
+		4D0D8B8928D38D170099BC86 /* gRPCCertificates-Cpp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "gRPCCertificates-Cpp.bundle"; sourceTree = "<group>"; };
+		4D2FD65528D4C0B8000499B2 /* AdminTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTabView.swift; sourceTree = "<group>"; };
+		4D2FD65928D4C17B000499B2 /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
+		4D2FD65B28D4C200000499B2 /* UserClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserClient.swift; sourceTree = "<group>"; };
+		4D2FD65D28D4C224000499B2 /* FirebaseUserClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserClient.swift; sourceTree = "<group>"; };
+		4D2FD66128D4C64C000499B2 /* ReportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsView.swift; sourceTree = "<group>"; };
+		4D2FD66428D4E833000499B2 /* EntriesSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesSectionView.swift; sourceTree = "<group>"; };
+		4D2FD66D28D516AF000499B2 /* EntriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesModel.swift; sourceTree = "<group>"; };
+		4D2FD67228D51E7E000499B2 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		4D2FD67628D521FA000499B2 /* AddEntryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryButtonView.swift; sourceTree = "<group>"; };
+		4D2FD67C28D523A7000499B2 /* FiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
+		4D3FF5B328D2005600AA70D2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4D763D3328D1B9D000B6C8BA /* ApplicationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationRepository.swift; sourceTree = "<group>"; };
+		4D763D3628D1B9F800B6C8BA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4D763D3828D1BA2200B6C8BA /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		4D763D4828D1BE3200B6C8BA /* DayProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayProgressView.swift; sourceTree = "<group>"; };
+		4D763D4D28D1C06700B6C8BA /* FirebaseAuthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthClient.swift; sourceTree = "<group>"; };
+		4D763D5028D1C08F00B6C8BA /* FirebaseEntriesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseEntriesClient.swift; sourceTree = "<group>"; };
+		4D763D5628D1C6AF00B6C8BA /* EntriesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesClient.swift; sourceTree = "<group>"; };
+		4D763D5828D1C81600B6C8BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4D7C30FD28D0CF4E0043E531 /* SimpleCalorie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCalorie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D7C310028D0CF4E0043E531 /* SimpleCalorieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalorieApp.swift; sourceTree = "<group>"; };
+		4D7C310428D0CF500043E531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D7C310728D0CF500043E531 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4D7C310928D0CF500043E531 /* SimpleCalorie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleCalorie.entitlements; sourceTree = "<group>"; };
+		4D7C310E28D0CF500043E531 /* SimpleCalorieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleCalorieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D7C311228D0CF500043E531 /* SimpleCalorieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalorieTests.swift; sourceTree = "<group>"; };
+		4D7C311828D0CF500043E531 /* SimpleCalorieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleCalorieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D7C311C28D0CF500043E531 /* SimpleCalorieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalorieUITests.swift; sourceTree = "<group>"; };
+		4D7C311E28D0CF500043E531 /* SimpleCalorieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalorieUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4D7C312D28D0CFA30043E531 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		4D7C312F28D0CFA30043E531 /* AppView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		4D7C313428D0CFA40043E531 /* EntriesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntriesListView.swift; sourceTree = "<group>"; };
+		4D7D491E28D3933D00A6D680 /* AuthClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthClient.swift; sourceTree = "<group>"; };
+		4D7D492128D3952600A6D680 /* DaySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySection.swift; sourceTree = "<group>"; };
+		4D7D492328D3964800A6D680 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		4D7D492528D3BB8F00A6D680 /* EntrySheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrySheetView.swift; sourceTree = "<group>"; };
+		4D7D492728D3E24400A6D680 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		4DC2615528D5DC4100C0DA58 /* AdminModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminModel.swift; sourceTree = "<group>"; };
+		4DC2615828D5F09A00C0DA58 /* UIUserAverageIntake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUserAverageIntake.swift; sourceTree = "<group>"; };
+		4DC2616028D62DCA00C0DA58 /* UIEntriesCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEntriesCount.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D7C30FA28D0CF4E0043E531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0D8B8428D38CFA0099BC86 /* FirebaseAnalytics in Frameworks */,
+				4D7D492A28D3EB6500A6D680 /* FirebaseStorage in Frameworks */,
+				4DC2615F28D61D6000C0DA58 /* OrderedCollections in Frameworks */,
+				4DC2615D28D61D6000C0DA58 /* Collections in Frameworks */,
+				4D0D8B8628D38CFA0099BC86 /* FirebaseAuth in Frameworks */,
+				4D0D8B8828D38CFA0099BC86 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D7C310B28D0CF500043E531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D7C311528D0CF500043E531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D0D8B6E28D353E50099BC86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D7C312E28D0CFA30043E531 /* App */,
+				4D2FD65428D4C0AB000499B2 /* Admin */,
+				4D7C313228D0CFA40043E531 /* Entries */,
+				4D7C312B28D0CFA30043E531 /* SignIn */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D0D8B7128D379C80099BC86 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4D0D8B7228D379D10099BC86 /* AsyncButton.swift */,
+				4D7D492728D3E24400A6D680 /* ImagePicker.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4D0D8B7F28D38B3C0099BC86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D2FD65428D4C0AB000499B2 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				4DC2615A28D5F0C800C0DA58 /* UIModels */,
+				4DC2615728D5DC4600C0DA58 /* Model */,
+				4D2FD65528D4C0B8000499B2 /* AdminTabView.swift */,
+				4D2FD65928D4C17B000499B2 /* UsersListView.swift */,
+				4D2FD66128D4C64C000499B2 /* ReportsView.swift */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		4D2FD66C28D51699000499B2 /* EntriesView */ = {
+			isa = PBXGroup;
+			children = (
+				4D2FD67E28D5341C000499B2 /* Model */,
+				4D7C313428D0CFA40043E531 /* EntriesListView.swift */,
+				4D2FD67C28D523A7000499B2 /* FiltersView.swift */,
+				4D2FD66428D4E833000499B2 /* EntriesSectionView.swift */,
+				4D763D4828D1BE3200B6C8BA /* DayProgressView.swift */,
+				4D2FD67228D51E7E000499B2 /* EntryView.swift */,
+				4D2FD67628D521FA000499B2 /* AddEntryButtonView.swift */,
+				4D7D492528D3BB8F00A6D680 /* EntrySheetView.swift */,
+			);
+			path = EntriesView;
+			sourceTree = "<group>";
+		};
+		4D2FD67E28D5341C000499B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D2FD66D28D516AF000499B2 /* EntriesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D763D3528D1B9EF00B6C8BA /* ServiceModels */ = {
+			isa = PBXGroup;
+			children = (
+				4D7D492328D3964800A6D680 /* NetworkError.swift */,
+				4D763D3628D1B9F800B6C8BA /* User.swift */,
+				4D763D3828D1BA2200B6C8BA /* Entry.swift */,
+			);
+			path = ServiceModels;
+			sourceTree = "<group>";
+		};
+		4D763D3C28D1BA6A00B6C8BA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4D763D3528D1B9EF00B6C8BA /* ServiceModels */,
+				4D763D5528D1C6A000B6C8BA /* AppServices */,
+				4D763D4F28D1C07400B6C8BA /* Implementations */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4D763D4A28D1BE5000B6C8BA /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				4D763D3328D1B9D000B6C8BA /* ApplicationRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		4D763D4F28D1C07400B6C8BA /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				4D763D4D28D1C06700B6C8BA /* FirebaseAuthClient.swift */,
+				4D763D5028D1C08F00B6C8BA /* FirebaseEntriesClient.swift */,
+				4D2FD65D28D4C224000499B2 /* FirebaseUserClient.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		4D763D5528D1C6A000B6C8BA /* AppServices */ = {
+			isa = PBXGroup;
+			children = (
+				4D7D491E28D3933D00A6D680 /* AuthClient.swift */,
+				4D763D5628D1C6AF00B6C8BA /* EntriesClient.swift */,
+				4D2FD65B28D4C200000499B2 /* UserClient.swift */,
+			);
+			path = AppServices;
+			sourceTree = "<group>";
+		};
+		4D7C30F428D0CF4E0043E531 = {
+			isa = PBXGroup;
+			children = (
+				4D0D8B8928D38D170099BC86 /* gRPCCertificates-Cpp.bundle */,
+				4D0D8B7F28D38B3C0099BC86 /* Frameworks */,
+				4D7C30FE28D0CF4E0043E531 /* Products */,
+				4D7C30FF28D0CF4E0043E531 /* SimpleCalorie */,
+				4D7C311128D0CF500043E531 /* SimpleCalorieTests */,
+				4D7C311B28D0CF500043E531 /* SimpleCalorieUITests */,
+			);
+			sourceTree = "<group>";
+		};
+		4D7C30FE28D0CF4E0043E531 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D7C30FD28D0CF4E0043E531 /* SimpleCalorie.app */,
+				4D7C310E28D0CF500043E531 /* SimpleCalorieTests.xctest */,
+				4D7C311828D0CF500043E531 /* SimpleCalorieUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D7C30FF28D0CF4E0043E531 /* SimpleCalorie */ = {
+			isa = PBXGroup;
+			children = (
+				4D7C310928D0CF500043E531 /* SimpleCalorie.entitlements */,
+				4D763D5828D1C81600B6C8BA /* GoogleService-Info.plist */,
+				4D3FF5B328D2005600AA70D2 /* Constants.swift */,
+				4D0D8B6F28D354900099BC86 /* DI.swift */,
+				4D7C310028D0CF4E0043E531 /* SimpleCalorieApp.swift */,
+				4D7C310428D0CF500043E531 /* Assets.xcassets */,
+				4D0D8B7128D379C80099BC86 /* Components */,
+				4D7C310628D0CF500043E531 /* Preview Content */,
+				4D763D4A28D1BE5000B6C8BA /* Repositories */,
+				4D763D3C28D1BA6A00B6C8BA /* Services */,
+				4D0D8B6E28D353E50099BC86 /* Views */,
+			);
+			path = SimpleCalorie;
+			sourceTree = "<group>";
+		};
+		4D7C310628D0CF500043E531 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4D7C310728D0CF500043E531 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4D7C311128D0CF500043E531 /* SimpleCalorieTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D7C311228D0CF500043E531 /* SimpleCalorieTests.swift */,
+			);
+			path = SimpleCalorieTests;
+			sourceTree = "<group>";
+		};
+		4D7C311B28D0CF500043E531 /* SimpleCalorieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D7C311C28D0CF500043E531 /* SimpleCalorieUITests.swift */,
+				4D7C311E28D0CF500043E531 /* SimpleCalorieUITestsLaunchTests.swift */,
+			);
+			path = SimpleCalorieUITests;
+			sourceTree = "<group>";
+		};
+		4D7C312B28D0CFA30043E531 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				4D7C312D28D0CFA30043E531 /* SignInView.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		4D7C312E28D0CFA30043E531 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4D7C312F28D0CFA30043E531 /* AppView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4D7C313228D0CFA40043E531 /* Entries */ = {
+			isa = PBXGroup;
+			children = (
+				4D7D492028D3951C00A6D680 /* UIModels */,
+				4D2FD66C28D51699000499B2 /* EntriesView */,
+			);
+			path = Entries;
+			sourceTree = "<group>";
+		};
+		4D7D492028D3951C00A6D680 /* UIModels */ = {
+			isa = PBXGroup;
+			children = (
+				4D7D492128D3952600A6D680 /* DaySection.swift */,
+			);
+			path = UIModels;
+			sourceTree = "<group>";
+		};
+		4DC2615728D5DC4600C0DA58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DC2615528D5DC4100C0DA58 /* AdminModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DC2615A28D5F0C800C0DA58 /* UIModels */ = {
+			isa = PBXGroup;
+			children = (
+				4DC2615828D5F09A00C0DA58 /* UIUserAverageIntake.swift */,
+				4DC2616028D62DCA00C0DA58 /* UIEntriesCount.swift */,
+			);
+			name = UIModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D7C30FC28D0CF4E0043E531 /* SimpleCalorie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D7C312228D0CF500043E531 /* Build configuration list for PBXNativeTarget "SimpleCalorie" */;
+			buildPhases = (
+				4D7C30F928D0CF4E0043E531 /* Sources */,
+				4D7C30FA28D0CF4E0043E531 /* Frameworks */,
+				4D7C30FB28D0CF4E0043E531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleCalorie;
+			packageProductDependencies = (
+				4D0D8B8328D38CFA0099BC86 /* FirebaseAnalytics */,
+				4D0D8B8528D38CFA0099BC86 /* FirebaseAuth */,
+				4D0D8B8728D38CFA0099BC86 /* FirebaseFirestore */,
+				4D7D492928D3EB6500A6D680 /* FirebaseStorage */,
+				4DC2615C28D61D6000C0DA58 /* Collections */,
+				4DC2615E28D61D6000C0DA58 /* OrderedCollections */,
+			);
+			productName = SimpleCalorie;
+			productReference = 4D7C30FD28D0CF4E0043E531 /* SimpleCalorie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D7C310D28D0CF500043E531 /* SimpleCalorieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D7C312528D0CF500043E531 /* Build configuration list for PBXNativeTarget "SimpleCalorieTests" */;
+			buildPhases = (
+				4D7C310A28D0CF500043E531 /* Sources */,
+				4D7C310B28D0CF500043E531 /* Frameworks */,
+				4D7C310C28D0CF500043E531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D7C311028D0CF500043E531 /* PBXTargetDependency */,
+			);
+			name = SimpleCalorieTests;
+			productName = SimpleCalorieTests;
+			productReference = 4D7C310E28D0CF500043E531 /* SimpleCalorieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D7C311728D0CF500043E531 /* SimpleCalorieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D7C312828D0CF500043E531 /* Build configuration list for PBXNativeTarget "SimpleCalorieUITests" */;
+			buildPhases = (
+				4D7C311428D0CF500043E531 /* Sources */,
+				4D7C311528D0CF500043E531 /* Frameworks */,
+				4D7C311628D0CF500043E531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D7C311A28D0CF500043E531 /* PBXTargetDependency */,
+			);
+			name = SimpleCalorieUITests;
+			productName = SimpleCalorieUITests;
+			productReference = 4D7C311828D0CF500043E531 /* SimpleCalorieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D7C30F528D0CF4E0043E531 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					4D7C30FC28D0CF4E0043E531 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					4D7C310D28D0CF500043E531 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 4D7C30FC28D0CF4E0043E531;
+					};
+					4D7C311728D0CF500043E531 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 4D7C30FC28D0CF4E0043E531;
+					};
+				};
+			};
+			buildConfigurationList = 4D7C30F828D0CF4E0043E531 /* Build configuration list for PBXProject "SimpleCalorie" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D7C30F428D0CF4E0043E531;
+			packageReferences = (
+				4D0D8B8228D38CFA0099BC86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk-xcframeworks" */,
+				4DC2615B28D61D6000C0DA58 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
+			productRefGroup = 4D7C30FE28D0CF4E0043E531 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D7C30FC28D0CF4E0043E531 /* SimpleCalorie */,
+				4D7C310D28D0CF500043E531 /* SimpleCalorieTests */,
+				4D7C311728D0CF500043E531 /* SimpleCalorieUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D7C30FB28D0CF4E0043E531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D7C310828D0CF500043E531 /* Preview Assets.xcassets in Resources */,
+				4D7C310528D0CF500043E531 /* Assets.xcassets in Resources */,
+				4D763D5928D1C81600B6C8BA /* GoogleService-Info.plist in Resources */,
+				4D0D8B8A28D38D170099BC86 /* gRPCCertificates-Cpp.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D7C310C28D0CF500043E531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D7C311628D0CF500043E531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D7C30F928D0CF4E0043E531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D2FD67328D51E7E000499B2 /* EntryView.swift in Sources */,
+				4D2FD65E28D4C224000499B2 /* FirebaseUserClient.swift in Sources */,
+				4D763D3928D1BA2200B6C8BA /* Entry.swift in Sources */,
+				4DC2615628D5DC4100C0DA58 /* AdminModel.swift in Sources */,
+				4D2FD67D28D523A7000499B2 /* FiltersView.swift in Sources */,
+				4D2FD65C28D4C200000499B2 /* UserClient.swift in Sources */,
+				4D7C313928D0CFA40043E531 /* SignInView.swift in Sources */,
+				4D7D492228D3952600A6D680 /* DaySection.swift in Sources */,
+				4D7C313E28D0CFA40043E531 /* EntriesListView.swift in Sources */,
+				4D2FD67728D521FA000499B2 /* AddEntryButtonView.swift in Sources */,
+				4D763D5128D1C08F00B6C8BA /* FirebaseEntriesClient.swift in Sources */,
+				4D763D3428D1B9D000B6C8BA /* ApplicationRepository.swift in Sources */,
+				4DC2615928D5F09A00C0DA58 /* UIUserAverageIntake.swift in Sources */,
+				4D2FD66528D4E833000499B2 /* EntriesSectionView.swift in Sources */,
+				4D3FF5B428D2005700AA70D2 /* Constants.swift in Sources */,
+				4D763D5728D1C6AF00B6C8BA /* EntriesClient.swift in Sources */,
+				4D763D4928D1BE3200B6C8BA /* DayProgressView.swift in Sources */,
+				4D7C313A28D0CFA40043E531 /* AppView.swift in Sources */,
+				4D7C310128D0CF4E0043E531 /* SimpleCalorieApp.swift in Sources */,
+				4D2FD65A28D4C17B000499B2 /* UsersListView.swift in Sources */,
+				4D763D4E28D1C06700B6C8BA /* FirebaseAuthClient.swift in Sources */,
+				4D7D492628D3BB8F00A6D680 /* EntrySheetView.swift in Sources */,
+				4D7D491F28D3933D00A6D680 /* AuthClient.swift in Sources */,
+				4D0D8B7328D379D10099BC86 /* AsyncButton.swift in Sources */,
+				4D2FD65628D4C0B8000499B2 /* AdminTabView.swift in Sources */,
+				4D2FD66228D4C64C000499B2 /* ReportsView.swift in Sources */,
+				4DC2616128D62DCA00C0DA58 /* UIEntriesCount.swift in Sources */,
+				4D2FD66E28D516AF000499B2 /* EntriesModel.swift in Sources */,
+				4D7D492428D3964800A6D680 /* NetworkError.swift in Sources */,
+				4D7D492828D3E24400A6D680 /* ImagePicker.swift in Sources */,
+				4D763D3728D1B9F800B6C8BA /* User.swift in Sources */,
+				4D0D8B7028D354900099BC86 /* DI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D7C310A28D0CF500043E531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D7C311328D0CF500043E531 /* SimpleCalorieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D7C311428D0CF500043E531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D7C311F28D0CF500043E531 /* SimpleCalorieUITestsLaunchTests.swift in Sources */,
+				4D7C311D28D0CF500043E531 /* SimpleCalorieUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D7C311028D0CF500043E531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D7C30FC28D0CF4E0043E531 /* SimpleCalorie */;
+			targetProxy = 4D7C310F28D0CF500043E531 /* PBXContainerItemProxy */;
+		};
+		4D7C311A28D0CF500043E531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D7C30FC28D0CF4E0043E531 /* SimpleCalorie */;
+			targetProxy = 4D7C311928D0CF500043E531 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4D7C312028D0CF500043E531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D7C312128D0CF500043E531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4D7C312328D0CF500043E531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = SimpleCalorie/SimpleCalorie.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SimpleCalorie/Preview Content\"";
+				DEVELOPMENT_TEAM = UA7EV3Y4QH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To capture food entries";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = L;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxkraev.SimpleCalorie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4D7C312428D0CF500043E531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = SimpleCalorie/SimpleCalorie.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SimpleCalorie/Preview Content\"";
+				DEVELOPMENT_TEAM = UA7EV3Y4QH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To capture food entries";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = L;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxkraev.SimpleCalorie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4D7C312628D0CF500043E531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UA7EV3Y4QH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxkraev.SimpleCalorieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleCalorie.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SimpleCalorie";
+			};
+			name = Debug;
+		};
+		4D7C312728D0CF500043E531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UA7EV3Y4QH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxkraev.SimpleCalorieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleCalorie.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SimpleCalorie";
+			};
+			name = Release;
+		};
+		4D7C312928D0CF500043E531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UA7EV3Y4QH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxkraev.SimpleCalorieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = SimpleCalorie;
+			};
+			name = Debug;
+		};
+		4D7C312A28D0CF500043E531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UA7EV3Y4QH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxkraev.SimpleCalorieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = SimpleCalorie;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D7C30F828D0CF4E0043E531 /* Build configuration list for PBXProject "SimpleCalorie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D7C312028D0CF500043E531 /* Debug */,
+				4D7C312128D0CF500043E531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D7C312228D0CF500043E531 /* Build configuration list for PBXNativeTarget "SimpleCalorie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D7C312328D0CF500043E531 /* Debug */,
+				4D7C312428D0CF500043E531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D7C312528D0CF500043E531 /* Build configuration list for PBXNativeTarget "SimpleCalorieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D7C312628D0CF500043E531 /* Debug */,
+				4D7C312728D0CF500043E531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D7C312828D0CF500043E531 /* Build configuration list for PBXNativeTarget "SimpleCalorieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D7C312928D0CF500043E531 /* Debug */,
+				4D7C312A28D0CF500043E531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4D0D8B8228D38CFA0099BC86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk-xcframeworks" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/akaffenberger/firebase-ios-sdk-xcframeworks";
+			requirement = {
+				kind = exactVersion;
+				version = 9.6.0;
+			};
+		};
+		4DC2615B28D61D6000C0DA58 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4D0D8B8328D38CFA0099BC86 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D0D8B8228D38CFA0099BC86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk-xcframeworks" */;
+			productName = FirebaseAnalytics;
+		};
+		4D0D8B8528D38CFA0099BC86 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D0D8B8228D38CFA0099BC86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk-xcframeworks" */;
+			productName = FirebaseAuth;
+		};
+		4D0D8B8728D38CFA0099BC86 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D0D8B8228D38CFA0099BC86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk-xcframeworks" */;
+			productName = FirebaseFirestore;
+		};
+		4D7D492928D3EB6500A6D680 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D0D8B8228D38CFA0099BC86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk-xcframeworks" */;
+			productName = FirebaseStorage;
+		};
+		4DC2615C28D61D6000C0DA58 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4DC2615B28D61D6000C0DA58 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		4DC2615E28D61D6000C0DA58 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4DC2615B28D61D6000C0DA58 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4D7C30F528D0CF4E0043E531 /* Project object */;
+}
